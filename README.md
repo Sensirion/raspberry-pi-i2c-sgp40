@@ -1,28 +1,27 @@
-# Sensirion Raspberry Pi I2C Sgp40 Driver
+# Sensirion Raspberry Pi I2C SGP40 Driver
 
-This document explains how to set up the Sgp40 sensor to run on a Raspberry Pi
+This document explains how to set up the SGP40 sensor to run on a Raspberry Pi
 using the provided code.
 
-TODO: DRIVER_GENERATOR Add picture of sensor to images/Sgp40.png
-[<center><img src="images/Sgp40.png" width="300px"></center>](TODO: DRIVER_GENERATOR Add evaluation kit URL)
+[<center><img src="images/SGP40.png" width="300px"></center>](https://www.sensirion.com/en/environmental-sensors/gas-sensors/sgp40)
 
-Click [here](TODO: DRIVER_GENERATOR Add evaluation kit URL) to learn more about the SCD4x Sensor and the SCD41 Evaluation Kit Board.
+Click [here](https://www.sensirion.com/en/environmental-sensors/gas-sensors/sgp40) to learn more about the SGP40 Sensor.
 
 
 ## Setup Guide
 
 ### Connecting the Sensor
 
-Your sensor has the four different connectors: VCC, GND, SDA, SCL, SEL. Use
-the following pins to connect your Sgp40:
+Your sensor has the four different connectors: VCC, GND, SDA, SCL. Use
+the following pins to connect your SGP40:
 
- *Sgp40*  |    *Raspberry Pi*
+ *SGP40*  |    *Raspberry Pi*
  :------: | :------------------:
-   VCC    |        Pin 1
+   VCC    |        Pin 1 (3.3V)
    GND    |        Pin 6
    SDA    |        Pin 3
    SCL    |        Pin 5
-   SEL    |        Pin 9 TODO: DRIVER_GENERATOR Check if this applies
+
 
 <center><img src="images/GPIO-Pinout-Diagram.png" width="900px"></center>
 
@@ -48,7 +47,12 @@ the following pins to connect your Sgp40:
 
       Output:
       ```
-      TODO: DRIVER_GENERATOR Add sensor output
+      SRAW VOC: 19720
+      SRAW VOC: 20956
+      SRAW VOC: 21622
+      SRAW VOC: 22076
+      SRAW VOC: 22314
+      SRAW VOC: 22566
       ...
       ```
 
