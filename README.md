@@ -67,3 +67,9 @@ the following pins to connect your SGP40:
 -   Ensure that your user account has read and write access to the I2C device.
     If it only works with user root (`sudo ./sgp40_i2c_example_usage`), it's
     typically due to wrong permission settings.
+
+## License
+This work is dual-licensed under BSD-3 and GPL 2.0 (or any later version).
+You can choose between one of them if you use this work.
+
+`SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0-or-later`
